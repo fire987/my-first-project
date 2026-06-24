@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-    <title>我的第一个网站</title>
-</head>
-<body>
-    <h1>你好，我是新手开发者 👋</h1>
-    <p>这是我用 GitHub Desktop 做的第一个网页！</p>
+  <meta charset="UTF-8">
+  <title>我的高级个人网站</title>
 
-    <button onclick="alert('你点击了按钮！')">
-        点我试试
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 300px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: gray;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #6c63ff;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #4b42d1;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>你好 👋</h1>
+    <p>这是我的高级个人网站</p>
+
+    <button onclick="alert('你点击了按钮 🚀')">
+      点击我
     </button>
+  </div>
+
 </body>
 </html>
